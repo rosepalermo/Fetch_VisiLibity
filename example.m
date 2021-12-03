@@ -23,8 +23,8 @@ load('example_input.mat')
 %% run
 
 % parameters for visibility functions
-eps = 0.1;
-epsilon = 1e-4;
+epsilon = 0.1;
+eps = 1e-4;
 snap_distance = 0.05; % Looks like we get some invalid (empty array) visibility polygons if snap_distance >= eps.
 
 [WaveArea, Fetch_dist, cosang] = fetch_VisiLibity(shorelines,eps,epsilon,snap_distance);
